@@ -1,0 +1,14 @@
+<div id="<%= dom_id post %>">
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= post.user.email %></td>
+        <td>
+          <%= link_to "View", post %>
+          <% if post.user == current_user %>|
+            <%= link_to "Edit", edit_post_path(post) %> |
+            <%= link_to "Delete", post, 'data-turbo-method': :delete %>
+          <% end %>
+        </td>
+      </tr>
+</div>

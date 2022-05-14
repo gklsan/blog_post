@@ -64,3 +64,11 @@ group :development do
   # gem "spring"
 end
 
+# Additional Gems
+gem 'devise'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap4'
+
+gem 'grape', '~> 0.14.0'
+gem 'grape-entity', '~> 0.7.1'
+gem 'grape_on_rails_routes', '~> 0.3.2'
